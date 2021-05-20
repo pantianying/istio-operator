@@ -253,7 +253,7 @@ update-generated-code:
 # build target compiles and updates resources
 ################################################################################
 .PHONY: build
-build: update-generated-code update-charts update-templates compile
+build: update-generated-code compile
 
 ################################################################################
 # create image
