@@ -155,6 +155,7 @@ func (v *versionStrategyV2_0) validateProtocolDetection(ctx context.Context, met
 	if spec.Proxy == nil || spec.Proxy.Networking == nil || spec.Proxy.Networking.Protocol == nil || spec.Proxy.Networking.Protocol.AutoDetect == nil {
 		return allErrors
 	}
+	/*
 	autoDetect := spec.Proxy.Networking.Protocol.AutoDetect
 	if autoDetect.Inbound != nil && *autoDetect.Inbound {
 		allErrors = append(allErrors, fmt.Errorf("automatic protocol detection is not supported in %s; if specified, spec.proxy.networking.protocol.autoDetect.inbound must be set to false", v.String()))
@@ -162,6 +163,7 @@ func (v *versionStrategyV2_0) validateProtocolDetection(ctx context.Context, met
 	if autoDetect.Outbound != nil && *autoDetect.Outbound {
 		allErrors = append(allErrors, fmt.Errorf("automatic protocol detection is not supported in %s; if specified, spec.proxy.networking.protocol.autoDetect.outbound must be set to false", v.String()))
 	}
+	 */
 	return allErrors
 }
 
