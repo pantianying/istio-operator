@@ -39,8 +39,8 @@ spec:
             add:
               - SYS_ADMIN
           privileged: true
-        workingDir: "/"
 {{- end }}
+        workingDir: "/"
 {{- if contains "/" .Values.wasmExtensions.cacher.image }}
         image: "{{ .Values.wasmExtensions.cacher.image }}"
 {{- else }}
